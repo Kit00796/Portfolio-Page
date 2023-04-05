@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Indie+Flower&family=Water+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Indie+Flower&family=Tillana:wght@400;500;600;700;800&family=Water+Brush&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Kit Home</title>
 </head>
 <body>
     <script> src="script.js"</script> 
-     <div class="nav">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+     <div class="nav"> 
+        <div class="nav-content">
+            <img class="logo" src="./assets/images/logo_edit_2.png" alt="KR Logo"> 
+            <a href="#">Contact</a>
+            <a href="#">Projects</a>
+            <a href="#">About Me</a>
+            <a href="#">Home</a>
+        </div>
      </div>
      <div class="heading">   
-        <h1>Welcome!</h1>
+        <h1>WELCOME!</h1>
      </div>
      
      <div class="main-body">
@@ -38,10 +39,41 @@
         </div>
         <div class="projects">
             <h2>Projects</h2>
-
+            <button class="accordion">section 1</button>
+            <div class="panel">
+                <p>here is going to be the drop down for the first project <br><br>I have always been facinated with graphic design and photograph. Naturally, front end programming called out to me. Learning how to program and the level of detail that can be brought to a webpage has opened an entirley new world for me. I've come to learn that this new world would be incomplete if I'm only ever working on just the head and not the entire body. So began my path to becoming a full stack engineer.</p>
+            </div>
+            <button class="accordion">secion 2</button>
+            <div class="panel">
+                <p>here is going to be the drop down for the second project</p>
+            </div>
+            <button class="accordion">section 3</button>
+            <div class="panel">
+                <p>here is going to be the drop down for the third project</p>
+            </div>
         </div>
      </div>
      
+     <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+
+
+
 </body>
 </html>
 
