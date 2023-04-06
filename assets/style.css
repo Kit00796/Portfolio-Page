@@ -36,7 +36,7 @@ body{
 .nav-content a:hover {
     
     color: black;
-    background-color: #E4E7E5;
+    background-color: #93999c;
     transition: 0.8s;
 }
   
@@ -45,43 +45,120 @@ body{
 }
 
 h1{
-    font-size: 120px;
-    font-family: 'Tillana', cursive;
-    color: black;
+    font-size: 160px;
     background-color: #67785c;
-    padding: 90px ;
+    padding: 48px ;
     margin: 0;
     text-align: center; 
     mix-blend-mode: screen;
     font-weight: 900;
 }
 
+h1, h2{
+    font-family: 'Tillana', cursive;
+    color: black;
+}
+
+h2{
+    background-color: #496245;
+    padding: 20px;
+    margin-top: 0;
+    
+}
+
 .heading{
     background-image: url('./images/olena-sergienko-3BlVILvh9hM-unsplash.jpg');
 }
 
+.bio{
+    padding: 20px;
+    margin: 10px;
+}
+
+.bio .column1of2{
+    max-width: 500px;
+    min-width: 400px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.bio .column2of2{
+    max-height: 400px;
+    min-height: 150px;
+    overflow: scroll;
+    float: right;
+}
+
+.bio #open-line{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.bio p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bio img{
+    align-items: end;
+    min-height: 250px;
+    max-height: 400px;
+    display: inline;
+}
+
+.quote{
+    background-image: url(./images/ivan-lopatin-vfhcRV7fqQs-unsplash.jpg);
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-width: 300px;margin-bottom: 20px;
+}
+
+.quote p{
+    margin-bottom: 0;
+    text-align: start;
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #4b5058;
+    color: #000;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 50%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
   }
+
+  button#s1{
+    border-top-right-radius: 7px;
+  }
+
+  button#s3{
+    border-bottom-right-radius: 7px;
+  }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #93999c;
   }
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: #E4E7E5;
     display: none;
     overflow: hidden;
+  }
+
+  .projects{
+    padding:20px 0 30px 0;
   }
