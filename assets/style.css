@@ -8,16 +8,28 @@ body{
     background-color: #E4E7E5;
 }
 
+p{
+    text-indent: 40px;
+    min-width: 300px;
+    max-width: 500px;
+    display: inline-block;
+    
+}
+
+#open-line{
+    text-indent: 0px;
+}
+
 .nav {
     background-color: #4b5058;  
+    width: 100%;
    
 }
 
 .logo{
     height: 60px;
     width: auto;
-    padding: 0px 16px;
-    
+    padding: 8px 24px;
 }
 
 .nav-content a{
@@ -26,7 +38,7 @@ body{
     color: #E4E7E5;
     float: right;
     text-align: center;
-    padding: 14px 24px;
+    padding: 14px 14px;
     text-decoration: none;
     top: 0;
     transition: top 0.3s;
@@ -52,6 +64,7 @@ h1{
     text-align: center; 
     mix-blend-mode: screen;
     font-weight: 900;
+    width: 100%;
 }
 
 h1, h2{
@@ -136,29 +149,131 @@ h2{
     border: none;
     outline: none;
     transition: 0.4s;
-  }
+}
 
-  button#s1{
+button#s1{
     border-top-right-radius: 7px;
-  }
+}
 
-  button#s3{
+button#s3{
     border-bottom-right-radius: 7px;
-  }
+}
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+/* Add a background color to the button if it is clicked on and when you move the mouse over it (hover) */
+.active, .accordion:hover {
     background-color: #93999c;
-  }
+}
   
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
+/* Style the accordion panel. hidden by default */
+.panel {
     padding: 0 18px;
     background-color: #E4E7E5;
     display: none;
-    overflow: hidden;
-  }
+    overflow: hidden; 
+}
 
-  .projects{
+.projects{
     padding:20px 0 30px 0;
-  }
+}
+
+.panel img{
+    width: 500px;
+    float: right;
+    padding: 10px 40px;
+}
+
+/*responsiveness*/
+
+
+@media only screen and (max-width: 1180px)  {
+    .panel img, .bio img{
+        float: left !important;
+        width: 300px;
+        padding-bottom: 16px;
+    }
+
+    .heading, .heading h1 {
+        font-size: 80px;
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .heading, .heading h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .column1of2{
+        padding: 0;
+    }
+
+    .bio{
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 400px;
+        padding-right: 0;
+
+    }
+}
+
+
+
+/*Contact page additional styling*/
+
+
+.con-line{
+    font-size: 28px;
+    font-weight: bolder;
+    max-width: none;
+    text-align: center;
+}
+
+
+.con-body{
+    text-indent: 0px;
+    min-width: 400px;  
+    text-align: center; 
+}
+
+#con-head h1{
+    font-size: 80px;
+    padding: 36px;
+}
+
+.contact{
+    text-align: center;
+}
+
+/* Style all font awesome icons */
+a .fa {
+    padding: 20px;
+    font-size: 60px;
+    width: 60px;
+    
+    text-align: center;
+    text-decoration: none;
+}
+  
+.fa:hover {
+opacity: 0.6;
+}
+  
+  
+.fa-linkedin{
+    background: #496245;
+    color: white;
+    
+}
+
+.fa-github {
+    background: white;
+    color: #496245;
+}
+
+.fa-envelope{
+    background-color: #496245;
+    color: white;
+}
