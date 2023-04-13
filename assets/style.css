@@ -64,7 +64,7 @@ h1{
     text-align: center; 
     mix-blend-mode: screen;
     font-weight: 900;
-    width: 100%;
+    width: auto;
 }
 
 h1, h2{
@@ -86,10 +86,12 @@ h2{
 .bio{
     padding: 20px;
     margin: 10px;
+    display:flex;
+    
 }
 
 .bio .column1of2{
-    max-width: 500px;
+    max-width: 600px;
     min-width: 400px;
     padding-right: 10px;
     margin-bottom: 50px;
@@ -97,10 +99,10 @@ h2{
 }
 
 .bio .column2of2{
-    max-height: 400px;
+    max-height: 500px;
     min-height: 150px;
     overflow: scroll;
-    float: right;
+    
 }
 
 .bio #open-line{
@@ -188,7 +190,8 @@ button#s3{
 @media only screen and (max-width: 1180px)  {
     .panel img, .bio img{
         float: left !important;
-        width: 300px;
+        width: 400px;
+        height: 300px;
         padding-bottom: 16px;
     }
 
@@ -199,9 +202,16 @@ button#s3{
 
 }
 
+@media only screen and (max-width:800px){
+    .bio img{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .heading, .heading h1 {
         font-size: 40px;
+        width: auto;
     }
 }
 
@@ -217,6 +227,25 @@ button#s3{
         padding-right: 0;
 
     }
+
+    .nav-content a{
+        font-size: 20px;
+        padding: 16px 8px;
+    }
+
+    .nav-content .logo{
+        padding: 8px;
+    }
+
+    .column1of2 #open-line{
+        font-size: 24px;
+    }
+
+    .column1of2 p, .column1of2{
+        width: 300px;
+    }
+
+
 }
 
 
